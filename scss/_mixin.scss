@@ -1,0 +1,11 @@
+@mixin pad {
+    @media(min-width: 769px){
+        @content
+    }
+};
+
+@mixin iphone5 {
+    @media(min-width: 321px){
+        @content
+    }
+}
