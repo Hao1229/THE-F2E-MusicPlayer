@@ -5,10 +5,10 @@
     border: 0.5px $secondtopicColor solid;
     border-radius: 10px;
     color: $secondtopicColor;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     text-align: center;
     @include pad{
-        padding-left: 2rem;
+        padding-left: 1rem;
         width: 8rem;
     }
     &::placeholder{
@@ -38,27 +38,42 @@
 }
 
 //左邊sidebar漢堡選單
-.hamburger{
+.library{
     max-height: 0;
     overflow: hidden;
     padding-left: 0;
+    transition: max-height 1.5s;
     @include pad{
-        transition: max-height 2.3s;
+        max-height: 100%;
+        text-align: left;
+        padding-left: 40px;
+    }
+}
+.library-active{
+    max-height: 170px; 
+}
+
+.discover{
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 0;
+    transition: max-height 1.5s;
+    @include pad{
         max-height: 100%;
         text-align: left;
         padding-left: 40px;
     }
 }
 
+.discover-active{
+    max-height: 170px; 
+}
+
+
 //左邊sidebar漢堡選單按鈕
-.pointer{
+.RWDbtn{
     &:active{
         color: blue
-    }
-    @include pad{
-        &:active{
-            color: $secondtopicColor
-        }
     }
 }
 

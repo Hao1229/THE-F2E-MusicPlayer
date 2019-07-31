@@ -8,13 +8,13 @@
   border: 0.5px #00F3FF solid;
   border-radius: 10px;
   color: #00F3FF;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   text-align: center;
 }
 
 @media (min-width: 769px) {
   .search {
-    padding-left: 2rem;
+    padding-left: 1rem;
     width: 8rem;
   }
 }
@@ -56,30 +56,48 @@
   list-style-type: none;
 }
 
-.hamburger {
+.library {
   max-height: 0;
   overflow: hidden;
   padding-left: 0;
+  -webkit-transition: max-height 1.5s;
+  transition: max-height 1.5s;
 }
 
 @media (min-width: 769px) {
-  .hamburger {
-    -webkit-transition: max-height 2.3s;
-    transition: max-height 2.3s;
+  .library {
     max-height: 100%;
     text-align: left;
     padding-left: 40px;
   }
 }
 
-.pointer:active {
-  color: blue;
+.library-active {
+  max-height: 170px;
+}
+
+.discover {
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 0;
+  -webkit-transition: max-height 1.5s;
+  transition: max-height 1.5s;
 }
 
 @media (min-width: 769px) {
-  .pointer:active {
-    color: #00F3FF;
+  .discover {
+    max-height: 100%;
+    text-align: left;
+    padding-left: 40px;
   }
+}
+
+.discover-active {
+  max-height: 170px;
+}
+
+.RWDbtn:active {
+  color: blue;
 }
 
 .bg-album {
