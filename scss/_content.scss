@@ -87,9 +87,11 @@
 }
 
 .album-title{
+    box-sizing: border-box !important;
     @include pad{
         margin-top: 8rem;
         margin-right: 2rem;
+        padding: 0 0;
     }
 }
 
