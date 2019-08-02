@@ -107,8 +107,35 @@
   background-size: cover;
 }
 
-.album-title {
-  position: absolute;
-  top: 8rem;
+@media (min-width: 769px) {
+  .album-title {
+    margin-top: 8rem;
+    margin-right: 2rem;
+  }
+}
+
+.follower {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.follow-skin {
+  border-radius: 10px !important;
+  width: 7rem !important;
+  height: 2rem !important;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+.music-list {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.top-music {
+  margin-left: 2rem;
+  padding-top: 2rem;
+}
+
+.pointer:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=all.css.map */

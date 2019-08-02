@@ -87,7 +87,39 @@
 }
 
 .album-title{
-    position: absolute;
-    top:8rem;
+    @include pad{
+        margin-top: 8rem;
+        margin-right: 2rem;
+    }
 }
 
+//跟隨者設計
+.follower{
+    color: rgba($color: white, $alpha: 0.5)
+}
+
+.follow-skin{
+    border-radius: 10px !important;
+    width: 7rem !important;
+    height: 2rem !important;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+
+//音樂列表設計
+.music-list{
+    background-color: rgba($color: black, $alpha: 0.7);
+}
+
+//top music 設計
+.top-music{
+    margin-left: 2rem;
+    padding-top: 2rem;
+}
+
+//hover 效果
+.pointer{
+    &:hover{
+        cursor: pointer;
+    }
+}
