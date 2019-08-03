@@ -88,6 +88,7 @@
 
 .album-title{
     box-sizing: border-box !important;
+    margin-top: 5rem;
     @include pad{
         margin-top: 8rem;
         margin-right: 2rem;
@@ -124,4 +125,23 @@
     &:hover{
         cursor: pointer;
     }
+}
+
+// 訂閱鈴鐺
+.bell{
+    height: 3rem;
+    width: 3rem;
+}
+
+// 加入音樂icon
+.plusicon{
+    border: 2px solid $secondtopicColor;
+    border-radius: 50%;
+    &:hover{
+        background-color: gray
+    }
+}
+//喜愛清單
+.loveList{
+    margin-top: 15rem;
 }

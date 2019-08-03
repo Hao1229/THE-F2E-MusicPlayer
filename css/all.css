@@ -107,10 +107,17 @@
   background-size: cover;
 }
 
+.album-title {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  margin-top: 5rem;
+}
+
 @media (min-width: 769px) {
   .album-title {
     margin-top: 8rem;
     margin-right: 2rem;
+    padding: 0 0;
   }
 }
 
@@ -137,5 +144,23 @@
 
 .pointer:hover {
   cursor: pointer;
+}
+
+.bell {
+  height: 3rem;
+  width: 3rem;
+}
+
+.plusicon {
+  border: 2px solid #00F3FF;
+  border-radius: 50%;
+}
+
+.plusicon:hover {
+  background-color: gray;
+}
+
+.loveList {
+  margin-top: 15rem;
 }
 /*# sourceMappingURL=all.css.map */

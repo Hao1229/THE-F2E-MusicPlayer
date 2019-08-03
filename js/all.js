@@ -45,6 +45,9 @@ var app = new Vue({
         let index = vm.favoriteMusic.indexOf(item)
         vm.favoriteMusic.splice(index,1)
       }
+    },
+    showProfile () {
+      
     }
   },
 })
