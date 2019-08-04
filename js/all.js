@@ -29,6 +29,8 @@ var app = new Vue({
       }
     ],
     favoriteMusic:[],
+    musicPlaying: 'music/Metamorphosis.mp3',
+    isPaused: false
   },
   methods: {
     showLibrary() {
@@ -46,8 +48,26 @@ var app = new Vue({
         vm.favoriteMusic.splice(index,1)
       }
     },
-    showProfile () {
-      
+    togglePlay () {
+      let music = document.querySelector('audio')
+      let vm = this
+      vm.isPaused = !vm.isPaused
+      if (music.paused) {
+        music.play()
+      }else {
+        music.pause()
+      }
+    },
+    progressing () {
+      let music = document.querySelector('audio')
+      let musicDuration = music.duration
+      let currentPosition = music.currentTime
+      let currentProgress = (currentPosition / musicDuration) * 100
+      let progressbarFill = document.querySelector('.progressBar-filled')
+      progressbarFill.style.width = `${currentProgress}%`
     }
   },
+ 
 })
+
+

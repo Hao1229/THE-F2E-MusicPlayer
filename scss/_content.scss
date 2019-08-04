@@ -145,3 +145,32 @@
 .loveList{
     margin-top: 15rem;
 }
+
+//音樂播放條
+.musicBar{
+    background: #21292F;
+    height: 60px;
+}
+
+//音樂進度條
+.progressBar{
+    background-color: rgba($color: $secondtopicColor, $alpha: 0.5);
+    height:2px;
+}
+
+// .progressBar::after{
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-color: $secondtopicColor;
+//     width: 500px;
+//     height: 2px;
+// }
+.progressBar-filled{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $secondtopicColor;
+    height: 2px;
+}

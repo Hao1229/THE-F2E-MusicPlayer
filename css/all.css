@@ -163,4 +163,22 @@
 .loveList {
   margin-top: 15rem;
 }
+
+.musicBar {
+  background: #21292F;
+  height: 60px;
+}
+
+.progressBar {
+  background-color: rgba(0, 243, 255, 0.5);
+  height: 2px;
+}
+
+.progressBar-filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00F3FF;
+  height: 2px;
+}
 /*# sourceMappingURL=all.css.map */
