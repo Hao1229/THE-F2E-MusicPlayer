@@ -125,18 +125,20 @@
             <!-- 播放條 -->
             <div class="fixed-bottom musicBar w-100">
                 <audio :src="musicPlaying" @timeupdate="progressing"></audio>
-                <div class="mt-3">
+                <div class="mt-3 ml-5">
                     <div class="d-inline-block">
                         <img src="img/Button-random.svg" class="pointer">
                         <i class="fas fa-fast-backward text-white pointer"></i>
-                        <img src="img/Button-Play.svg" class="pointer" @click.prevent="togglePlay" v-if="!isPaused">
-                        <img src="img/Pause.svg" class="pointer mb-1 mx-2" @click.prevent="togglePlay" v-if="isPaused">
+                        <img src="img/Button-Play.svg" class="pointer" @click.prevent="togglePlay" v-if="isPaused">
+                        <img src="img/Pause.svg" class="pointer mb-1 mx-2" @click.prevent="togglePlay" v-if="!isPaused">
                         <i class="fas fa-fast-forward text-white pointer"></i>
-                        <img src="img/Cycle.svg" class="pointer">
+                        <img src="img/Cycle.svg" class="pointer" @click="reStart">
                     </div>
-                    <div class="d-inline-block progressBar w-50 relative">
+                    <span class="text-white">{{minutes}}:{{seconds}}</span>
+                    <div class="d-inline-block progressBar w-50 relative mb-1 mx-3">
                         <div class="progressBar-filled"></div>
                     </div>
+                    <span class="text-white">{{totalMiuntes}}:{{totalSeconds}}</span>
                 </div>
             </div>
         </div>
