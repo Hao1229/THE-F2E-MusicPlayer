@@ -135,15 +135,18 @@
 
 .music-list {
   background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 100px;
 }
-@media(min-width:769px){
-  .RWDmusicList{
+
+@media (min-width: 769px) {
+  .RWDmusicList {
     position: absolute;
     bottom: 0;
-    left: 0;
     right: 0;
+    left: 0;
   }
 }
+
 .top-music {
   margin-left: 2rem;
   padding-top: 2rem;

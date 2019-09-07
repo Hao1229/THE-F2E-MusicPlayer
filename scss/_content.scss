@@ -112,6 +112,15 @@
 //音樂列表設計
 .music-list{
     background-color: rgba($color: black, $alpha: 0.7);
+    margin-top: 100px;
+}
+.RWDmusicList{
+    @media(min-width: 769px){
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
 }
 
 //top music 設計
